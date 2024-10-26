@@ -1,9 +1,11 @@
 import express, { Request, Response } from 'express';
+import cors from 'cors';
 import { Usuario } from './models/Usuario';
 import { usuarios } from './data/usuarios'; // Importamos los usuarios harcodeados
 
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
+app.use(cors());
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
