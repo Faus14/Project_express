@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",                // Transpila a ES6 (o puedes cambiar a ES5 si es necesario)
+    "module": "commonjs",            // Usa el módulo CommonJS (compatible con Node.js)
+    "outDir": "./dist",              // Carpeta de salida para los archivos compilados
+    "rootDir": "./src",              // Carpeta de origen de los archivos TypeScript
+    "strict": true,                  // Activar todas las comprobaciones estrictas
+    "esModuleInterop": true,         // Permite la importación de módulos ES
+    "forceConsistentCasingInFileNames": true,  
+    "skipLibCheck": true             
+  },
+  "include": ["src/**/*"],            // Incluir todo lo que esté en `src`
+  "exclude": ["node_modules"]         // Excluir dependencias
+}
